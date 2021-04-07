@@ -1,8 +1,0 @@
-\babel@toc {russian}{}
-\contentsline {section}{\numberline {1}Цель работы}{2}%
-\contentsline {section}{\numberline {2}Теория}{2}%
-\contentsline {section}{\numberline {3}Ход работы}{4}%
-\contentsline {subsection}{\numberline {3.1}Изучение ВАХ с помощью осциллографа}{4}%
-\contentsline {subsection}{\numberline {3.2}Изучение ВАХ статически}{5}%
-\contentsline {subsection}{\numberline {3.3}Генератор на основе туннельного диода}{7}%
-\contentsline {section}{\numberline {4}Вывод}{8}%
