@@ -1,0 +1,11 @@
+\babel@toc {russian}{}
+\contentsline {section}{\numberline {1}Цель работы}{2}%
+\contentsline {section}{\numberline {2}Теория}{2}%
+\contentsline {section}{\numberline {3}Экспериментальные установки}{3}%
+\contentsline {subsection}{\numberline {3.1}Исследование зависимости $\sigma (T)$ с помощью универсального цифрового вольтметра В7-34А}{3}%
+\contentsline {subsection}{\numberline {3.2}Исследование зависимости $\sigma (T)$ с помощью моста переменного тока.}{4}%
+\contentsline {section}{\numberline {4}Ход работы}{4}%
+\contentsline {subsection}{\numberline {4.1}Исследование зависимости $\sigma (T)$ с помощью универсального цифрового вольтметра В7-34А}{4}%
+\contentsline {subsection}{\numberline {4.2}Исследование зависимости $\sigma (T)$ с помощью моста переменного тока}{5}%
+\contentsline {section}{\numberline {5}Вывод}{5}%
+\contentsline {section}{\numberline {6}Графики и таблицы с данными}{5}%

@@ -1,0 +1,8 @@
+\babel@toc {russian}{}
+\contentsline {section}{\numberline {1}Цель работы}{2}%
+\contentsline {section}{\numberline {2}Теория}{2}%
+\contentsline {subsection}{\numberline {2.1}Феноменологичная теория.}{2}%
+\contentsline {subsection}{\numberline {2.2}Связь эффективного поля Вейсса с обменным инегралом}{3}%
+\contentsline {section}{\numberline {3}Экспериментальная устанвока}{4}%
+\contentsline {section}{\numberline {4}Ход работы}{5}%
+\contentsline {section}{\numberline {5}Вывод}{6}%
