@@ -1,7 +1,7 @@
-.toc
-.aux
-.fdb_latexmk
-.fls
-.log
-.gz
-.DS_Store
+*.toc
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.gz
+*.DS_Store
