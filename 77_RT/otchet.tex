@@ -38,9 +38,9 @@
 	\vspace{2cm}
 	\vfill
 \begin{flushright}
-	{\Large Выполнила студентка Б01-903}\par
+	{\Large Выполнил студент группы Б04-852 ФЭФМ}\par
 	\vspace{0.3cm}
-	{\LARGE Юлия Прохорова} \par
+	{\LARGE Яромир Водзяновский } \par
 
 	
 \end{flushright}
@@ -189,7 +189,7 @@
 
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[scale = 0.6]{диаграмма_2.png}
+        \includegraphics[scale = 0.5]{диаграмма_2.png}
         \caption{Зависимость коэффициента усиления K(f)}
         \label{Sallen-Ki}
     \end{center}
@@ -229,7 +229,7 @@
 
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[scale = 0.6]{lbfuhfvf_3.png}
+        \includegraphics[scale = 0.5]{lbfuhfvf_3.png}
         \caption{Зависимость коэффициента усиления K(f) повторителя}
         \label{Sallen-Ki}
     \end{center}
@@ -238,44 +238,93 @@
 \item Из рис. 5 получаем, что граничная частота равна $f \approx 13$МГц. Сравним с расчетом по формуле $U_{m-out} = \frac{V_{max}}{2 \pi f} \approx 4$В.
 
 \end{enumerate}
+
+
+\section{Задание №4. Инвертирующий усилитель}
+
+
+Собрем схему на рис. \ref{p4}. 
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[scale = 0.5]{p4.jpg}
+        \caption{Схема инвертирующего усилителя}
+        \label{p4}
+    \end{center}
+\end{figure}
+
+\begin{enumerate}
+    \item Соберем схему (рис. \ref{p4}), используя резисторы из предыдущего пункта. Определим кожффициент усиления $K_0$ и граничную частоту $f_p$.
+    $$K_0 \approx 86.95, \;\;\;\; f_p \approx 13\;MGh$$
+    \item Эти значения примерно совпадают с $K_0 = -R_2/R_1$ и частотой для инвертирующего усилителя.
+\end{enumerate}
+
+
 \section{Задание №5. Разностный усилитель. }
 
 
 \begin{figure}[H]
     \begin{center}
-        \includegraphics[scale = 0.6]{задание_5.png}
+        \includegraphics[scale = 0.5]{задание_5.png}
         \caption{Схема разностного усилителя}
         \label{Sallen-Ki}
     \end{center}
 \end{figure}
 
 \begin{enumerate}
-    \item Соберем схему, изображенную на рис. 5. Здесь $\frac{R_2}{R_1} = 10, R_3 = R_1, R_4 =R_2$.
+    \item Соберем схему, изображенную на рис. 5. Здесь $R_1 = R_3 = 1\; kOm,\; R_2 = R_4 = 8.2\;kOm$.
     \item Измерим коэффициент усиления по $U_{in1} $ и $U_{in2}$. 
-     
-    \begin{table}[H]
-        \centering
-        \begin{center}
-        \end{center}
-        \vspace{0.1cm}
-        \label{tab:my_label}
-        \begin{tabular}{|p{2cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|p{1cm}|}
-            \hline
-            f, Гц & 50 & 100  & 500 & 1k & 3k & 10k & 100k & 500k  & 1M  \\ 
-            \hline
-            $K_1$   & 35 &  10  &  10 & 10  & 10  & 10 &  9 &  5 & 2 \\
-            \hline
-            $K_2$  & 10 &   10 &   10  & 10  & 10  & 9 &  5 &  8 & 2 \\
-            \hline
-            \end{tabular}
-            \caption{Зависимость коэффициента усиления K.}
-    \end{table}
+    $$K_1 = 16.5\;\;\;\;\;K_2 = 17.4$$
+
 
     \item  Объединив входы, убедились, что коэффициент усиления общего сигнала близок к нулю.
     \item $U_{out} = \frac{R_2}{R_1}\cdot(U_{in2} - U_{in1}) \approx 1$ В.
 
 \end{enumerate}
 
-\subsection{Вывод:}
+
+\section{№6 Полосовой усилитель}
+
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[scale = 0.4]{p6.jpg}
+        \caption{Схема полосового усилителя}
+        \label{p6}
+    \end{center}
+\end{figure}
+
+\begin{enumerate}
+    \item Соберем схему (рис. \ref{p6}). Возьмем $R_1 = 100\; Ом, \;\; R_2 = 10\; кОм, \;\; C_1 = 0.5\; мкФ, \;\; C_2 = 1\; нФ$.
+
+    \item  Снимем зависимость от частоты коэффициента $K = U_{out}/U_{in}$ (табл. \ref{t7}). Построим диаграмму Боде (рис. \ref{last}). Определим коэффициент усиления $K_0$ на средних частотах, а также нижнюю и верхнюю граничные частоты.
+    \begin{table}[H]
+        \centering
+        \begin{center}
+        \end{center}
+        \vspace{0.1cm}
+        \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+            \hline
+            f, Гц  & 100  & 500 & 1k & 2k & 5k & 10k & 15k & 20k & 25k & 30k & 50k & 100k & 500k  \\ 
+            \hline
+            $K$   & 3.26 &  13.7 &  25.5 & 42 & 55.4 & 48.7 &  39.84 &  32.6 & 27.6 & 23.7 & 15 & 8.15 & 2.41 \\
+            \hline
+  
+            \end{tabular}
+            \caption{Зависимость коэффициента усиления K.}
+            \label{t7}
+    \end{table}
+
+    \begin{figure}[H]
+        \begin{center}
+            \includegraphics[scale = 0.4]{last.png}
+            \caption{Диаграмма Боде}
+            \label{last}
+        \end{center}
+    \end{figure}
+
+    Коэффициент усиления $K_0 \approx 55.5$, нижняя и верхняя граничные частоты $f_h = 16 \;kGh, \;\; f_l = 1.8 \; kGh.$
+
+\end{enumerate}
+
+\section{Вывод:}
 Изучили устройство операционного усилителя. Разобрали различные схемы усилителей.
 \end{document}
