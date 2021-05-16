@@ -80,13 +80,13 @@
     \end{center}
 
     \begin{center}
-        \fbox{$U_{БЭ} = 0.65  \;  V$}
+        \fbox{$U_{БЭ_1} = 0.6  \;  V, \;\;\; U_{БЭ_2} = 0.52 \; V$}
     \end{center}
 
     \begin{center}
         \fbox{$I_{k1} = 50\; mkA$}
         \fbox{$S_1 = \frac{I_{k1}}{U_{БЭ}} \approx 10^{-4}$}
-        \fbox{$I_{э1} = 475  \; mkA, \;\;\; I_{э2} = 475 \; mkA$}
+        \fbox{$I_{э1} = 475  \; mkA, \;\;\; I_{э2} = 476 \; mkA$}
     \end{center}
 
 
@@ -125,13 +125,13 @@
 
 
     \item Измерим резонансный коэффициент усиления для случая $R=0$, соединив накоротко эмиттеры у транзисторов. \par 
-    $U_{in} = 0.01 \;V \;\;\; U_{out = 0,45\; V}$
+    $U_{in} = 0.01 \;V \;\;\; U_{out} = 0,45\; V$
     \begin{center}
         \fbox{$K \approx 45$}
     \end{center}
 
 
-    \item Снимем зависимость коэффициента усиления от частоты входного сигнала при амплитуде $U_{m_{in}}$, соответсвующей линейному участку АЧХ и занесем в таблицу \ref{t2}. Построим эту зависимость рис. \ref{gr2}.
+    \item Снимем зависимость коэффициента усиления от частоты входного сигнала при амплитуде $U_{m_{in}} = 20\; mV$, соответсвующей линейному участку АЧХ и занесем в таблицу \ref{t2}. Построим эту зависимость рис. \ref{gr2}.
     Определим полосу пропускания $\Delta f_{0.7}$ и добротность $Q = f_{p}/\Delta f_{0.7}$. \par 
 
     \begin{center}
@@ -139,7 +139,8 @@
     \end{center}
 
     \begin{center}
-        \fbox{$Q = 1000$}
+        \fbox{$Q \approx 22$}
+        \fbox{$K_{max} \approx 14.45$}
     \end{center}
 
     \begin{table}[H]
@@ -162,7 +163,7 @@
     \begin{figure}[H]
         \begin{center}
             \includegraphics[scale = 1]{gr2.png}
-            \caption{Зависимость $U_{out}(f)$}
+            \caption{Зависимость $K(f)$}
             \label{gr2}
         \end{center}
     \end{figure}
@@ -175,10 +176,9 @@
 
 
 \begin{enumerate}
-    \item Замкнем цепь обратной связи как на рис. \ref{scheme_2}. Вместо кварца подключим резистор $R = 300\; \Omega.$ Измерим амплитуду выходнго колебания. \par 
+    \item Замкнем цепь обратной связи как на рис. \ref{scheme_2}. Вместо кварца подключим резистор $R = 300\; \Omega.$ Измерим частоту выходнго колебания. \par 
     \begin{center}
         \fbox{$f \approx 1\; MGz$}
-        \fbox{$U_{out} \approx 25\; mV$}
     \end{center}
     
     \begin{figure}[H]
@@ -203,11 +203,11 @@
 
     \begin{center}
         Без кварца: $\Delta f \approx 9\; Gz$ \par 
-        С кварцем: $\Delta f_k \approx 26\; Gz$
+        С кварцем: $\Delta f_k \approx 26\; kGz$
     \end{center}
 
     \begin{center}
-        \fbox{$Q_k = \Delta f_k/\Delta f \cdot Q \approx 65000$}
+        \fbox{$Q_k = \Delta f_k/\Delta f \cdot Q \approx 63555$}
     \end{center}
 
 
@@ -217,13 +217,13 @@
     Определим электрические параметры кварцевого резонатора. Включим последователно с кварцем конденсатор $C_s = 130 \div 160\; pF$, измерим изменение $\Delta f_k$.
 
     \begin{center}
-        \fbox{$C_k = 2 C_s \frac{\Delta f_k}{f_k} = 7.28\; pF$} \par 
+        \fbox{$C_k = 2 C_s \frac{\Delta f_k}{f_k} = 7.28 \cdot 10^{-3}\; pF$} \par 
         \fbox{$L_k = \frac{1}{4 \pi^2 f_k^2 C_k} = 3.47\; Гн$} \par 
-        \fbox{$\rho_k = \sqrt{L_k/C_k} = 21802.65\; \Omega/m$} \par 
-        \fbox{$r_k = \frac{\rho_k}{Q_k} = 0.36\; \Omega$}
+        \fbox{$\rho_k = \sqrt{L_k/C_k} = 21.8\; M\Omega$} \par 
+        \fbox{$r_k = \frac{\rho_k}{Q_k} = 338.3\; \Omega$}
     \end{center}
 
-    \item Исследуем стабильность частоты кварцевого генератора при изменении питающего напряжения $U_{п2}$ от 8 до 12 В. Результаты внесем в таблицу \ref{t3} без кварца и таблица \ref{t4} с кварцем.
+    \item Исследуем стабильность частоты кварцевого генератора при изменении питающего напряжения $U_{п2}$ от 8 до 12 В. Результаты внесем в таблицу \ref{t3} без кварца и с кварцем.
     
     \begin{table}[H]
         \centering
@@ -234,32 +234,15 @@
             \hline
             $U_{п2}$, V & 8&9&10&11&12 \\ 
             \hline
-            $f$, kGz  &997.243&  996.745& 996.163& 995.854& 995.264 \\ 
+            $f$, kGz без кварца  &997.243&  996.745& 996.163& 995.854& 995.264 \\ 
             \hline
-            $U_{out}$, mV &28.96&32.55&36.42 &40.45&45.78 \\
+            $f$, MGz с кварцем  &1.000016&  1.000017& 1.000018& 1.000017& 1.000018 \\ 
             \hline
             \end{tabular}
-            \caption{Без кварца}
+            \caption{Стабильность частоты}
             \label{t3}
     \end{table}
 
-    \begin{table}[H]
-        \centering
-        \begin{center}
-        \end{center}
-        \vspace{0.1cm}
-        \begin{tabular}{|c|c|c|c|c|c|}
-            \hline
-            $U_{п2}$, V & 8&9&10&11&12 \\ 
-            \hline
-            $f$, MGz  &1.000016&  1.000017& 1.000018& 1.000017& 1.000018 \\ 
-            \hline
-            $U_{out}$, mV &20.3&23.5&26.2 &28.5&29.6 \\
-            \hline
-            \end{tabular}
-            \caption{С кварцем}
-            \label{t4}
-    \end{table}
 
 \end{enumerate}
 
@@ -272,7 +255,7 @@
     
     Измерим частоту колебаний генератора, рподстроив в резонанс LC-контур. 
     \begin{center}
-        \fbox{$U_{out1} = 7.8\; mV, \;\;\;\; f \approx 980\; kGz$}
+        \fbox{$f \approx 980\; kGz$}
     \end{center}
 
     \begin{figure}[H]
@@ -300,8 +283,6 @@
             $U_{п2}$, V & 8&9&10&11&12 \\ 
             \hline
             $f$, MGz  &1.000016&  1.000017& 1.000018& 1.000017& 1.000018 \\ 
-            \hline
-            $U_{out}$, mV &20.3&23.5&26.2 &28.5&29.6 \\
             \hline
             \end{tabular}
             \caption{Стабильность частоты генератора}
